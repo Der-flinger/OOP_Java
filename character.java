@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public abstract class character {
     private String name;
     private int level;
@@ -5,6 +7,7 @@ public abstract class character {
     private int health;
     private int speed;
     private int defense;
+    protected static Random r;
 
     public character(String name, int lvl, int power, int hp, int speed, int defense) {
         this.name = name;
