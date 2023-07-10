@@ -10,7 +10,7 @@ public class Enchanter extends rangeCharacter {
     // }
 
     public Enchanter(String name){
-        super("Hero", 5, 8, 65, 1, 4, 0.0, 0);
+        super("rangeChar", 5, 8, 65, 1, 4, 0.0, 0);
         this.name = name;
         this.accuracy = 0.9;
         this.range = 10;

@@ -23,8 +23,8 @@ public abstract class rangeCharacter extends character{
     }
 
     @Override
-    public void getExtendInfo() {
-        System.out.println(String.format("power = %d | speed = %d | defense = %d | accuracy = %f | range = %d | type: %s", this.power, this.speed, this.defense, this.accuracy, this.range, this.getClass().getCanonicalName()));
+    public void getExtendedInfo() {
+        System.out.println(String.format("power = %d | speed = %d | defense = %d | accuracy = %f | range = %d", this.power, this.speed, this.defense, this.accuracy, this.range));
         System.out.println("-------".repeat(13));
     }
 }

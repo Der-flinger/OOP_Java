@@ -37,6 +37,7 @@ public abstract class character implements charcterInterface{
 
     public void getTreatment(character currentCharacter) {
         currentCharacter.health += power * level * 0.5;
+
     }
 
 }
