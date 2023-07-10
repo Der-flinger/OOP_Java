@@ -1,6 +1,15 @@
 import java.util.ArrayList;
 import java.util.Random;
 
+import characters.Enchanter;
+import characters.Marksman;
+import characters.Peasant;
+import characters.Pikeman;
+import characters.Priest;
+import characters.Rogue;
+import characters.Sniper;
+import main_templates.character;
+
 public class base_programm {
 
     // String name, int lvl, int power, int hp, int speed, int defense
@@ -15,7 +24,7 @@ public class base_programm {
         printArray(team1);
         System.out.println("---".repeat(13));
         printArray(team2);
-        
+
     }
     /**
      * Метод для заполнения армии существами
@@ -44,7 +53,7 @@ public class base_programm {
 
                     case 5: array.add(new Rogue("warrior"));
                             break;
-                            
+
                     case 6: array.add(new Sniper("shooter"));
                             break;
                 }
@@ -71,17 +80,17 @@ public class base_programm {
         // hero2.getCharInfo();
         // hero2.step();
         // hero2.getExtendedInfo();
-        
+
         // Priest hero3 = new Priest("healer");
         // hero3.getCharInfo();
         // hero3.step();
         // hero3.getExtendedInfo();
-        
+
         // rangeCharacter hero4 = new Sniper("shooter");
         // hero4.getCharInfo();
         // hero4.step();
         // hero4.getExtendedInfo();
-        
+
         // Peasant hero5 = new Peasant("support");
         // hero5.getCharInfo();
         // hero5.step();

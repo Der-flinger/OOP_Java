@@ -1,3 +1,6 @@
+package characters;
+import main_templates.meleeCharacter;
+
 /**
  * Разбойник
  */
