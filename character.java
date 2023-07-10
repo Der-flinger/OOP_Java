@@ -1,13 +1,13 @@
 import java.util.Random;
 
-public abstract class character {
-    private String name;
+public abstract class character implements charcterInterface{
+    protected String name;
     private int level;
-    private int power;
+    protected int power;
     private int health;
-    private int speed;
-    private int defense;
-    protected static Random r;
+    protected int speed;
+    protected int defense;
+    protected Random r = new Random();
 
     public character(String name, int lvl, int power, int hp, int speed, int defense) {
         this.name = name;
@@ -16,6 +16,11 @@ public abstract class character {
         this.health = hp;
         this.speed = speed;
         this.defense = defense;
+    }
+
+        @Override
+    public void getCharInfo() {
+        System.out.println(String.format("name-> %s | lvl = %d | hp = %d | type: %s", this.name, this.level, this.health, this.getClass().getSimpleName()));
     }
 
     public void attack(character target) {
@@ -34,9 +39,4 @@ public abstract class character {
         currentCharacter.health += power * level * 0.5;
     }
 
-    @Override
-    public String toString() {
-        // TODO Auto-generated method stub
-        return String.format("Name: %s lvl: %d HP: %d ", name, level, health);
-    }
 }
