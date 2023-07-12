@@ -6,8 +6,8 @@ import main_templates.rangeCharacter;
  */
 public class Sniper extends rangeCharacter{
     
-    public Sniper(String name){
-        super("rangeChar", 5, 7, 50, 2, 4, 0.0, 0);
+    public Sniper(String name, int x, int y){
+        super("rangeChar", 5, 7, 50, 2, 4, 0.0, 0, x, y);
         this.name = name;
         this.accuracy = 0.9;
         this.range = 10;

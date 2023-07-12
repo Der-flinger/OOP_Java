@@ -6,8 +6,8 @@ import main_templates.meleeCharacter;
  */
 public class Pikeman extends meleeCharacter {
     
-    public Pikeman(String name) {
-        super("meleeChar", 3, 7, 80, 1, 10, 0.0);
+    public Pikeman(String name, int x, int y) {
+        super("meleeChar", 3, 7, 80, 1, 10, 0.0, x, y);
         this.name = name;
         this.ability = 0.8;
     }

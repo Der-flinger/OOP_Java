@@ -2,6 +2,9 @@ package main_templates;
 
 import java.util.Random;
 
+/**
+ * Базовый класс, на котором основаны все другие персонажи
+ */
 public abstract class character implements charcterInterface {
 
   protected String name;
@@ -11,34 +14,24 @@ public abstract class character implements charcterInterface {
   protected int speed;
   protected int defense;
   protected Random r = new Random();
+  protected coordinates position;
 
-  public character(
-    String name,
-    int lvl,
-    int power,
-    int hp,
-    int speed,
-    int defense
-  ) {
+  public character(String name, int lvl, int power, int hp, int speed, int defense, int x, int y) {
     this.name = name;
     this.level = lvl;
     this.power = power;
     this.health = hp;
     this.speed = speed;
     this.defense = defense;
+    this.position = new coordinates(x, y);
   }
 
   @Override
   public void getCharInfo() {
     System.out.println(
-      String.format(
-        "name-> %s | lvl = %d | hp = %d | type: %s",
-        this.name,
-        this.level,
-        this.health,
-        this.getClass().getSimpleName()
-      )
-    );
+        String.format(
+            "name-> %s | lvl = %d | hp = %d | type: %s | position--> %s",
+            this.name, this.level, this.health, this.getClass().getSimpleName(), this.position));
   }
 
   public void attack(character target) {

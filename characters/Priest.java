@@ -6,8 +6,8 @@ import main_templates.rangeCharacter;
  */
 public class Priest extends rangeCharacter{
     
-    public Priest(String name){
-        super("rangeChar", 4, 5, 35, 1, 2, 0.0, 0);
+    public Priest(String name, int x, int y){
+        super("rangeChar", 4, 5, 35, 1, 2, 0.0, 0, x, y);
         this.name = name;
         this.accuracy = 0.85;
         this.range = 8;

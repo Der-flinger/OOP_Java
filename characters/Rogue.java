@@ -6,8 +6,8 @@ import main_templates.meleeCharacter;
  */
 public class Rogue extends meleeCharacter{
     
-    public Rogue(String name) {
-        super("meleeChar", 4, 9, 70, 2, 5, 0.0);
+    public Rogue(String name, int x, int y) {
+        super("meleeChar", 4, 9, 70, 2, 5, 0.0, x, y);
         this.name = name;
         this.ability = 0.95;
     }
