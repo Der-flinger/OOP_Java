@@ -30,8 +30,16 @@ public abstract class character implements charcterInterface {
   public void getCharInfo() {
     System.out.println(
         String.format(
-            "name-> %s | lvl = %d | hp = %d | type: %s | position--> %s",
+            "name-> %s  | lvl = %d | hp = %d | type: %s  | position--> %s",
             this.name, this.level, this.health, this.getClass().getSimpleName(), this.position));
+  }
+
+  public int getX(character ch) {
+    return ch.position.x;
+  }
+
+  public int getY(character ch) {
+    return ch.position.y;
   }
 
   public void attack(character target) {

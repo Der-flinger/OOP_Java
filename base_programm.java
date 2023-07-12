@@ -1,3 +1,4 @@
+
 import characters.*;
 import java.util.ArrayList;
 import java.util.Random;
@@ -17,10 +18,20 @@ public class base_programm {
     System.out.println("---".repeat(13));
     printArray(team2);
 
-    // rangeCharacter hero1 = new Enchanter("buffer", 1, 2);
+    int minDistance = coordinates.getMinDistance(team1, team2);
+    System.out.println(minDistance);
+
+    // rangeCharacter hero1 = new Enchanter("buffer", 1, 1);
     // hero1.getCharInfo();
     // hero1.step();
     // hero1.getExtendedInfo();
+
+    // character hero2 = new Marksman("shooter", 9, 9);
+    // hero2.getCharInfo();
+    // hero2.step();
+    // hero2.getExtendedInfo();
+
+    // System.out.println(coordinates.getDistance(hero1, hero2));
   }
 
   /**
